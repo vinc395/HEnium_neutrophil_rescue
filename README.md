@@ -91,23 +91,3 @@ To rerun the tutorial, place equivalent local inputs following:
 - `config/tutorial_paths.yaml`
 
 The configs use paths relative to the repository root. Run notebooks in order so Notebook 1 creates the registered H&E files used by Notebooks 2 and 3.
-
-## GitHub Packaging Notes
-
-This repository is intended to be committed as code plus rendered executed notebooks. The `.gitignore` excludes:
-
-- `.venv/` and `.venv-palom/`
-- real files under `input/`
-- generated files under `results/`
-- H-Optimus/Hugging Face caches
-- large scientific artifacts such as OME-TIFF, RDS, NPY, NPZ, H5AD, Parquet, and PDF files
-
-Before publishing, check:
-
-```bash
-git status --ignored --short
-find . -type f -size +50M
-rg -n '[/]home/ISD|[/]scratch' README.md DATA_AVAILABILITY.md notebooks config scripts envs
-```
-
-Expected result: only code, configs, docs, lightweight manifests, and notebooks should be commit candidates.
