@@ -1,0 +1,33 @@
+image_embedding:
+  model_id: bioptimus/H-optimus-1
+  batch_size: 128
+patch:
+  patch_size_px: 224
+  upsample_factor: 4.0
+  he_um_per_px_override: 0.2124998718994902
+source:
+  name: hoptimus_cellpose_ap2320a_ap0921a_source_allcells
+  max_cells_per_sample: 0
+  boundary_source: cell_boundaries.csv.gz
+  counts_source: cell_feature_matrix/matrix.mtx.gz
+rna_embedding:
+  normalization: xenium_global_median_size_factor
+  transform: log1p
+  scaling: per_gene_scale_clip_10
+  pca_components: 10
+alignment:
+  latent_dim: 128
+  batch_size: 64
+  max_epochs: 20
+  early_stop_patience: 5
+  loss_mode: bleepinput
+image_clustering:
+  target_clusters: 40
+  neighbors: 30
+  umap_min_dist: 0.3
+  run_harmony: true
+  harmony_key: sample_id
+manual_review:
+  confirmed_neutrophil_cluster_for_notebook3:
+    branch: image_rna_aligned_bleep_harmony_target40_allcells
+    cluster: 34

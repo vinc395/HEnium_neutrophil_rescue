@@ -1,0 +1,29 @@
+project_dir: .
+registration_sample_table: config/samples.tsv
+cellpose_sample_table: config/cellpose_samples.tsv
+hoptimus_cellpose_config: config/hoptimus_cellpose_allcells.yaml
+input_dir: input/reference
+seurat_rds: input/reference/tiles_annot_cnt30_xen_only_res05_final_version.rds
+subtype_reference_dir: input/reference/xenium_cellpose_subtypes_final_reference
+results:
+  image: results/02_hoptimus_image_clusters
+  wnn: results/03_xenium_wnn
+  palom: results/01_palom_registration
+parameters:
+  registration_samples:
+  - AP0921a
+  - AP2320a
+  analysis_samples:
+  - AP2320a
+  - AP0921a
+  random_seed: 42
+  palom_dapi_channel: 0
+  overlay_tile_size_px: 1024
+  hoptimus_model: bioptimus/H-optimus-1
+  image_pca_dims: 50
+  image_knn: 30
+  target_image_clusters: 40
+  min_transcripts_non_neutrophil: 10
+  confirmed_neutrophil_image_cluster: 34
+  rna_pcs: 10
+  wnn_target_clusters: null

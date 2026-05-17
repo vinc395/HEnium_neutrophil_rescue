@@ -1,0 +1,120 @@
+{
+  "input_dir": "input",
+  "n_files": 28,
+  "total_size_bytes": 9903471025,
+  "files": [
+    {
+      "relative_path": "input/README.md",
+      "size_bytes": 1537
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP0921a/cell_boundaries.csv.gz",
+      "size_bytes": 32278821
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP0921a/cell_feature_matrix/barcodes.tsv.gz",
+      "size_bytes": 600837
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP0921a/cell_feature_matrix/features.tsv.gz",
+      "size_bytes": 62429
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP0921a/cell_feature_matrix/matrix.mtx.gz",
+      "size_bytes": 168675400
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP0921a/cells.csv.gz",
+      "size_bytes": 6535539
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP2320a/cell_boundaries.csv.gz",
+      "size_bytes": 19448817
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP2320a/cell_feature_matrix/barcodes.tsv.gz",
+      "size_bytes": 369829
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP2320a/cell_feature_matrix/features.tsv.gz",
+      "size_bytes": 62429
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP2320a/cell_feature_matrix/matrix.mtx.gz",
+      "size_bytes": 86067873
+    },
+    {
+      "relative_path": "input/cellpose/cellpose_outs_AP2320a/cells.csv.gz",
+      "size_bytes": 3891530
+    },
+    {
+      "relative_path": "input/reference/tiles_annot_cnt30_xen_only_res05_final_version.rds",
+      "size_bytes": 6072062056
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/export_subtypes_final_reference.log",
+      "size_bytes": 5384
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/reference_genes.txt",
+      "size_bytes": 30942
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/reference_subtypes_final_by_coarse_counts.csv",
+      "size_bytes": 2850
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/reference_subtypes_final_count_sums.csv",
+      "size_bytes": 1252756
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/reference_subtypes_final_count_sums.rds",
+      "size_bytes": 787566
+    },
+    {
+      "relative_path": "input/reference/xenium_cellpose_subtypes_final_reference/reference_subtypes_final_metadata.csv",
+      "size_bytes": 3133
+    },
+    {
+      "relative_path": "input/registration/AP0921a/AP0921a H and E pf 40x.ome.tif",
+      "size_bytes": 187005318
+    },
+    {
+      "relative_path": "input/registration/AP0921a/AP0921a_morphology_focus_0000.ome.tif",
+      "size_bytes": 433559877
+    },
+    {
+      "relative_path": "input/registration/AP0921a/morphology_focus_0001.ome.tif",
+      "size_bytes": 480124253
+    },
+    {
+      "relative_path": "input/registration/AP0921a/morphology_focus_0002.ome.tif",
+      "size_bytes": 394516507
+    },
+    {
+      "relative_path": "input/registration/AP0921a/morphology_focus_0003.ome.tif",
+      "size_bytes": 496881377
+    },
+    {
+      "relative_path": "input/registration/AP2320a/AP2320a H and E pf 40x.ome.tif",
+      "size_bytes": 141918409
+    },
+    {
+      "relative_path": "input/registration/AP2320a/AP2320a_morphology_focus_0000.ome.tif",
+      "size_bytes": 308517481
+    },
+    {
+      "relative_path": "input/registration/AP2320a/morphology_focus_0001.ome.tif",
+      "size_bytes": 388852541
+    },
+    {
+      "relative_path": "input/registration/AP2320a/morphology_focus_0002.ome.tif",
+      "size_bytes": 294390661
+    },
+    {
+      "relative_path": "input/registration/AP2320a/morphology_focus_0003.ome.tif",
+      "size_bytes": 385564873
+    }
+  ],
+  "notes": "Packaged inputs only: raw registration OME-TIFFs arranged per sample with morphology-focus companion channel files using the generic names referenced by OME metadata, minimal Cellpose Xenium-format cells/boundaries/count matrix files, coarse label RDS, and subtype reference tables. Irrelevant Xenium exports such as transcripts, zarr archives, overview images, parquet duplicates, nucleus boundaries, and Cell Ranger-style H5 files were not copied."
+}

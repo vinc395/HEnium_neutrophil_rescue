@@ -1,0 +1,3 @@
+sample_id	xenium_dir	registered_he_ome_tif	boundary_source	notes
+AP2320a	input/cellpose/cellpose_outs_AP2320a	results/01_palom_registration/outputs/AP2320a/registered_slides/AP2320a_he_registered_palom.ome.tif	cell_boundaries.csv.gz	Packaged minimal Xenium-format Cellpose all-cell source used by notebooks 2 and 3. Run Notebook 1 first to create the registered H&E file.
+AP0921a	input/cellpose/cellpose_outs_AP0921a	results/01_palom_registration/outputs/AP0921a/registered_slides/AP0921a_he_registered_palom.ome.tif	cell_boundaries.csv.gz	Packaged minimal Xenium-format Cellpose all-cell source used by notebooks 2 and 3. Run Notebook 1 first to create the registered H&E file.

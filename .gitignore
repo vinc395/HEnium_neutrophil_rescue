@@ -1,0 +1,60 @@
+# Local environments
+.venv/
+.venv-palom/
+env/
+venv/
+.mamba/
+.conda/
+
+# Python/Jupyter caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Local model and package caches
+.cache/
+hf_cache/
+huggingface/
+models/
+checkpoints/
+
+# Large/private tutorial inputs and generated outputs
+input/**
+!input/
+!input/README.md
+!input/input_manifest.json
+results/**
+!results/
+!results/README.md
+
+# Scientific binary artifacts that should not enter normal Git history
+*.ome.tif
+*.ome.tiff
+*.tif
+*.tiff
+*.qptiff
+*.rds
+*.RData
+*.npy
+*.npz
+*.h5
+*.h5ad
+*.zarr
+*.zarr.zip
+*.parquet
+*.mtx
+*.mtx.gz
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Logs and OS/editor noise
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

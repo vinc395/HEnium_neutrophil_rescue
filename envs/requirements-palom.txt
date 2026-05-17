@@ -1,0 +1,7 @@
+palom[all]
+tifffile
+numpy
+pandas
+matplotlib
+pillow
+pyyaml

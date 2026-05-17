@@ -1,0 +1,22 @@
+*.ipynb text eol=lf
+*.py text eol=lf
+*.R text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.tsv text eol=lf
+*.csv text eol=lf
+
+# Large scientific data are intentionally not diffed in Git.
+*.ome.tif -diff
+*.ome.tiff -diff
+*.qptiff -diff
+*.rds -diff
+*.RData -diff
+*.npy -diff
+*.npz -diff
+*.h5 -diff
+*.h5ad -diff
+*.zarr.zip -diff
+*.parquet -diff
+*.pdf -diff
