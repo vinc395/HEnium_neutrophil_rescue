@@ -1,5 +1,7 @@
 # HEnium Morphology-Assisted Neutrophil Rescue Tutorial
 
+<img width="1672" height="941" alt="ChatGPT Image May 18, 2026, 12_48_32 AM" src="https://github.com/user-attachments/assets/6cc84b79-2198-48a7-8ed2-6ff2cccbe946" />
+
 This repository is a notebook-driven tutorial for rescuing neutrophils in Xenium data using registered H&E morphology. The motivating problem is that neutrophils can be poorly resolved by transcript-only calls from the Xenium 5k panel, especially when transcript counts are low. This workflow uses H&E morphology and RNA-aligned image embeddings to identify a neutrophil-like morphology cluster, then carries those morphology-confirmed neutrophils into RNA/image WNN label reconciliation.
 
 The included executed notebooks are intended as the readable tutorial version. They show the expected outputs, plots, and review artifacts from the local two-sample run.
